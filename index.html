@@ -8,12 +8,13 @@
     <!--Enlace a la hoja de estilo-->
     <link rel="stylesheet" href="./css/index.css">
     <!--Enlace al js-->
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
     <!--Enlace al favicon-->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   </head>
   <body>
     <div id="wrapper">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <!--Barra de navegación de arriba-->
       <nav id="navegation">
         <div id="izq-nav">
@@ -24,7 +25,7 @@
         <img src="./img/image.png" width="10%">
         
         <div id="der-nav">
-          <a> Sposts </a>
+          <a href="#Misiones"> Misiones </a>
           <a> Contacto</a>
         </div>
         
@@ -34,8 +35,8 @@
       <div id="hero">
         <h1 id="title">Astronomia<br>Y<br>Curiosidades</h1>
       </div>
-    <!--Introducción-->
-    <div id="Intro">
+      <!--Introducción-->
+      <div id="Intro">
       <h1 id="title-intro">Introducción</h1>
       <div id="row">
         <div class="flip-card">
@@ -83,22 +84,168 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      
+      <!--Galería-->
+      <div id="Astrofotos">
+        <h1 id="title-astro">Astrofotos</h1>
+        <div class="row">
+          <div class="column">
+            <img src="./img/skyscape.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="./img/andromeda.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="./img/aurora.jpg" style="width:103%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="./img/mira.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="./img/skyscape.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="./img/andromeda.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="./img/aurora.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="./img/mira.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            
+            
+            <div class="column">
+              <img class="demo cursor" src="./img/skyscape.jpg" style="width:100%" onclick="currentSlide(1)" alt="© Wang Zheng">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./img/andromeda.jpg" style="width:100%" onclick="currentSlide(2)" alt="© Alan Friedman">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./img/aurora.jpg" style="width:100%" onclick="currentSlide(3)" alt="© Nicolai Brügger">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./img/mira.jpg" style="width:100%" onclick="currentSlide(4)" alt="© László Francsics">
+            </div>
+          </div>
+        </div>
+        <button class="accordion">Ver mas</button>
+        <div class="panel">
+          <div class="row">
+            <div class="column">
+              <img src="./img/cuadrope.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="./img/premio.jpg" style="width:95%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="./img/cumulo del.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="./img/hero2.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              
+              <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="./img/cuadrope.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="./img/premio.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="./img/cumulo del.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="./img/hero2.jpg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+              
+              
+              <div class="column">
+                <img class="demo cursor" src="./img/cuadrope.jpg" style="width:100%" onclick="currentSlide(5)" alt="PEPE">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/premio.jpg" style="width:100%" onclick="currentSlide(6)" alt="Paco">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/cumulo del.jpg" style="width:100%" onclick="currentSlide(7)" alt="© Nicolai Brügger">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/hero2.jpg" style="width:100%" onclick="currentSlide(8)" alt="© László Francsics">
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!--Galería-->
-    <div id="Astrofotos">
-      <div class="container">
-        <h2 class="text-center">Astrofotos</h2>
-        <div class="lightbox-gallery">
-          <div><img src="https://picsum.photos/id/343/300/300" data-image-hd="https://picsum.photos/id/343/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
-          <div><img src="https://picsum.photos/id/112/300/300" data-image-hd="https://picsum.photos/id/112/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime accusamus officiis dignissimos doloribus consectetur harum eos sapiente optio aut minima."></div>
-          <div><img src="https://picsum.photos/id/155/300/300" data-image-hd="https://picsum.photos/id/155/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates veritatis similique, amet, maiores soluta recusandae cupiditate, sed perspiciatis fugit minima, sunt dolores cum earum deserunt illo ipsum!"></div>
-          <div><img src="https://picsum.photos/id/11/300/300" data-image-hd="https://picsum.photos/id/11/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque laudantium dignissimos tenetur eos unde quidem repellat officiis nemo laboriosam necessitatibus deleniti commodi quis aliquid est atque tempora aut, nihil!"></div>
-          <div><img src="https://picsum.photos/id/434/300/300" data-image-hd="https://picsum.photos/id/434/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus consequatur soluta quaerat itaque, laboriosam quis a facilis, cumque, deleniti quas aperiam voluptate dolore. Enim nostrum sit eaque, porro eligendi illo placeat?"></div>
-          <div><img src="https://picsum.photos/id/101/300/300" data-image-hd="https://picsum.photos/id/101/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit quam, id aliquam totam aperiam quas rem debitis voluptatem pariatur, illo accusamus facilis eius ipsa! Reprehenderit libero, quas iste repudiandae distinctio, quos dignissimos."></div>
+      </div>
+      <!--Noticias-->
+      <div id="Misiones">
+        <h1 id="title-astro">Misiones</h1>
+        <div id="grid">
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OGI9e0lgbvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div id="texto-not">
+            <h1 id="title-not">Artemis 1</h1>
+            All eyes will be on the historic Launch Complex 39B when the Orion spacecraft and the Space Launch System (SLS) rocket lift off for the first time from NASA's modernized Kennedy Space Center in Florida.
+
+            Artemis I will be the first in a series of increasingly complex missions to build a long-term human presence at the Moon for decades to come.
+
+            The primary goals for Artemis I are to demonstrate Orion’s systems in a spaceflight environment and ensure a safe re-entry, descent, splashdown, and recovery prior to the first flight with crew on Artemis II.
+          </div>
+
+            <div id="texto-not">
+              <h1 id="title-not">Apollo 11</h1>
+              Apollo 11 was the fifth manned mission of the United States Apollo Program and the first in history to land a human being on the Moon. The Apollo mission spacecraft was sent into space on July 16, 1969, landed on the moon on July 20 of that same year, and the next day two astronauts (Armstrong and Aldrin) became the first to walk on the lunar surface. . Apollo 11 was propelled by a Saturn V rocket from the LC 39A pad and launched at 13:32 UTC from the Cape Kennedy complex in Florida (USA). The mission was officially known as AS-506. The mission was a decisive milestone for NASA against the Soviet Union's space program during the space race and is considered one of the most significant moments in human history.
+            </div>
+
+            <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QqYBkKe-1vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+    
+    <script src="./js/top.js"></script>
+  </body>
 </html>

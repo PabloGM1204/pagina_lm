@@ -1,38 +1,42 @@
-// Create a lightbox
-(function() {
-  var $lightbox = $("<div class='lightbox'></div>");
-  var $img = $("<img>");
-  var $caption = $("<p class='caption'></p>");
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-  // Add image and caption to lightbox
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
 
-  $lightbox
-    .append($img)
-    .append($caption);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  // Add lighbox to document
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  $('body').append($lightbox);
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  $('.lightbox-gallery img').click(function(e) {
-    e.preventDefault();
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
-    // Get image link and description
-    var src = $(this).attr("data-image-hd");
-    var cap = $(this).attr("alt");
 
-    // Add data to lighbox
-
-    $img.attr('src', src);
-    $caption.text(cap);
-
-    // Show lightbox
-
-    $lightbox.fadeIn('fast');
-
-    $lightbox.click(function() {
-      $lightbox.fadeOut('fast');
-    });
-  });
-
-}());
