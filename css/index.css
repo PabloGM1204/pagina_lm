@@ -46,6 +46,8 @@ body{
 #navegation{
     text-align: center;
     overflow: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
 }
 
 #izq-nav{
@@ -378,7 +380,7 @@ img.hover-shadow {
     color:rgb(255, 255, 255);
 }
 
-/************************ Noticias ************************/
+/************************ Misiones ************************/
 
 #grid{
     display: grid;
@@ -407,8 +409,56 @@ img.hover-shadow {
     margin-left: 500px;
 }
 
+/************************ Footer ************************/
+
+#Footer{
+    background-image: url("../img/footer.jpg");
+    background-position-x: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 50vh;
+}
+
+#grid2{
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding-top: 7%;
+}
+
+#title-fot{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#title-fot:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+
+}
+
 /********************** Medias Querys *********************/
 
-@media screen and (max-width: 900px) {
-    
+@media only screen and (width<=1000px) {
+    /****************Navegation***************/
+    /****************Introduccion***************/
+    /****************Astrofotos***************/
+    /****************Misiones***************/
+    /****************Footer***************/
+
+
+
+    #row{
+        grid-template-columns: auto auto;
+    }
+
+    .row{
+        grid-template-columns: auto auto;
+    }
+
+    #grid{
+        grid-template-columns: auto auto;
+    }
 }
