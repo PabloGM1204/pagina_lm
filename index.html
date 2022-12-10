@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astronomia Y Curiosidades</title>
+    <title>Astronomy And Curiosities</title>
     <!--Enlace a la hoja de estilo-->
     <link rel="stylesheet" href="./css/index.css">
     <!--Enlace al js-->
@@ -13,6 +13,8 @@
 
     <!--Enlace al favicon-->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!--Enlace a los iconos de la social media-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Enlace para el nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -23,9 +25,9 @@
       <nav id="navegation">
         <div class="topnav" id="myTopnav">
           <a href="#Intro" class="active">Intro</a>
-          <a href="#Astrofotos">AstroPictures</a>
+          <a href="#Astrofotos">Astropictures</a>
           <a href="#Misiones">Mission</a>
-          <a href="#Footer">Fin</a>
+          <a href="#Sitios">Places</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -35,7 +37,7 @@
       </nav>
       <!--Hero Section-->
       <div id="hero">
-        <h1 id="title">Astronomia<br>Y<br>Curiosidades</h1>
+        <h1 id="title">Astronomy<br>And<br>Curiosities</h1>
       </div>
       <!--Introducción-->
       <div id="Intro">
@@ -92,39 +94,39 @@
       <div id="Astrofotos">
         <h1 id="title-astro">AstroPictures</h1>
         <div class="grid-gallery">
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/andromeda.jpg">
               <img class="grid-gallery__image" src="./img/andromeda.jpg">
           </a>
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/aurora.jpg">
               <img class="grid-gallery__image" src="./img/aurora.jpg">
           </a>
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/cumulo del.jpg">
             <img class="grid-gallery__image" src="./img/cumulo del.jpg">
           </a>
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/guiding.jpg">
             <img class="grid-gallery__image" src="./img/guiding.jpg">
           </a>
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/cuadrope.jpg">
             <img class="grid-gallery__image" src="./img/cuadrope.jpg">
           </a>
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/skyscape.jpg">
             <img class="grid-gallery__image" src="./img/skyscape.jpg">
           </a>
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/pilares.png">
             <img class="grid-gallery__image" src="./img/pilares.png">
           </a>
-          <a class="grid-gallery__item" href="#">
+          <a class="grid-gallery__item" href="./img/premio.jpg">
             <img class="grid-gallery__image" src="./img/premio.jpg">
           </a>
       </div>
       
       </div>
-      <!--Noticias-->
+      <!--Misiones-->
       <div id="Misiones">
         <h1 id="title-astro">Most famous missions</h1>
         <div id="grid">
           <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OGI9e0lgbvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/OGI9e0lgbvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <div id="texto-not">
@@ -137,16 +139,30 @@
           </div>
 
             <div id="texto-not">
-              <h1 id="title-not">Apollo 11</h1>
+              <h1 id="title-not2">Apollo 11</h1>
               Apollo 11 was the fifth manned mission of the United States Apollo Program and the first in history to land a human being on the Moon. The Apollo mission spacecraft was sent into space on July 16, 1969, landed on the moon on July 20 of that same year, and the next day two astronauts (Armstrong and Aldrin) became the first to walk on the lunar surface. . Apollo 11 was propelled by a Saturn V rocket from the LC 39A pad and launched at 13:32 UTC from the Cape Kennedy complex in Florida (USA). The mission was officially known as AS-506. The mission was a decisive milestone for NASA against the Soviet Union's space program during the space race and is considered one of the most significant moments in human history.
             </div>
 
             <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QqYBkKe-1vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/QqYBkKe-1vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-
+      <!--Sitios-->
+      <div id="Sitios">
+        <h1 id="title-sitios">The best places to see the sky</h1>
+        <div id="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.89792068917!2d-69.14136204798825!3d-23.863915512743013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96af46527fef1c47%3A0x34dbbb7aa8223dc!2sDesierto%20de%20Atacama!5e0!3m2!1ses!2ses!4v1670691962749!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div>
+            <h1 id="title-sit">Desierto de Atacamas, Chile</h1>
+            En Chile se encuentran los observatorios astronómicos más importantes del mundo: Paranal, La Silla, Las Campanas, Cerro Tololo… En Cerro Paranal se está construyendo el Telescopio Europeo Extremadamente Grande (E-ELT), llamado a ser el mayor observatorio óptico del mundo, con un telescopio de 100 metros de diámetro.
+          </div>
+          <div>
+            <h1 id="title-sit">La Palma, Islas Canarias, España</h1>
+            Las Islas Canarias son otro enclave privilegiado para ver las estrellas. En la isla de La Palma se encuentra el observatorio del Roque de los Muchachos, perteneciente al Instituto de Astrofísica de Canarias, que cuenta con más de una docena de instrumentos gestionados por diferentes países. La ubicación de la isla en medio del Atlántico y su altura sobre el nivel del mar convierten a la Isla Bonita en el lugar predilecto de muchos astrónomos.
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161588.80212287325!2d-15.49330006601243!3d28.102306687085523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4094518b44a92f%3A0x40340f3be4d13e0!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1670692518037!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+      </div>
       <!--Footer-->
       <div id="Footer">
         <div id="grid2">
@@ -157,7 +173,9 @@
             <li><a id="title-fot" href="https://www.nasa.gov/"><strong>WebGrafía</strong></a></li>
           </div>
           <div>
-            <img src="./img/image.png" width="20%"></img>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
           </div>
         </div>
       </div>

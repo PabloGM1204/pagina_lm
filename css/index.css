@@ -91,6 +91,11 @@ body {
     display: none;
 }
 
+.icon {
+    height: 40px;
+    margin-top: -20px;
+}
+
 /******Responsive*****/
 
 @media screen and (max-width: 1000px) {
@@ -227,6 +232,9 @@ body {
     grid-auto-rows: 200px;
     gap: 1rem;
     grid-auto-flow: row dense;
+    margin-right: 20px;
+    margin-left: 20px;
+
 }
 
 
@@ -303,16 +311,56 @@ body {
 #title-not{
     margin-bottom: 5%;
     text-decoration: underline;
-    margin-top: 5px;
+    margin-top: 50px;
 }
 
-.video {
-    width: 100%;
+#title-not2{
+    margin-bottom: 5%;
+    text-decoration: underline;
+    margin-top: 100px;
+}
+
+
+.video iframe{
+    width: 70%;
+    height: 120%;
 }
 
 .video2{
     float: right;
-    margin-left: 500px;
+}
+
+/************************ Places ************************/
+
+#Sitios{
+    margin-top: 12vh;
+    color: #ffffff;
+}
+
+#maps{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10%;
+}
+
+#title-sitios{
+    margin-top: 20px;
+    margin-bottom: -100px;
+    color: #ffffff;
+    font-family: title2;
+}
+
+#maps iframe{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 600px;
+    height: 450px;
+}
+
+#title-sit{
+    margin-bottom: 5%;
+    text-decoration: underline;
+    margin-top: 10vh;
 }
 
 /************************ Footer ************************/
@@ -342,12 +390,43 @@ body {
 #title-fot:hover{
     text-decoration: underline;
     color: rgb(255, 255, 255);
+}
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+}
+
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
 
 /********************** Medias Querys *********************/
 
 @media only screen and (width<=1000px) {
+    #wrapper{
+        width: 100%;
+    }
     /***************Introduccio***************/
     
     .texto{
@@ -370,18 +449,58 @@ body {
     #grid{
         grid-template-columns: auto;
     }
-    /****************Footer***************/
 
+    #title-not{
+        margin-top: 17vh;
+    }
+    #texto-not{
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .video {
+        width: 100%;
+        height: 140%;
+    }
+    
+    .video2{
+        width: 100%;
+    }
+    /****************Sitios***************/
+    #Sitios{
+        padding-top: 10vh;
+        padding-bottom: -10vh;
+    }
+
+    #maps{
+        grid-template-columns: auto;
+        padding-bottom: 20%;
+    }
+    #maps iframe{
+        padding-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
 
 
 }
 
 @media only screen and (width<=600px) {
+    #wrapper{
+        width: 100%;
+    }
+    /****************Hero Section***************/
+
+    #title{
+        font-size: 1rem;
+    }
+
     /****************Introduccion***************/
     #row{
         grid-template-columns: auto;
-        margin-left: 17%;
+        margin-left: 10%;
     }
 
     /****************Misiones***************/
@@ -391,11 +510,29 @@ body {
     }
 
     .video {
-        width: 50%;
+        width: 100%;
     }
     
     .video2{
-        width: 70%;
-
+        width: 100%;
     }
+
+    /****************Sitios***************/
+    #maps{
+        grid-template-columns: auto;
+        padding-bottom: 20%;
+    }
+
+    #title-sit{
+        padding-top: 10vh;
+    }
+
+    #maps iframe{
+        padding-top: 20%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        height: 100%;
+    }
+
 }

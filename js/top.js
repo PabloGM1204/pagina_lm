@@ -56,3 +56,10 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+//Para el iframe
+function myFunction() {
+    var iframe = document.getElementById("myFrame");
+    var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
+    elmnt.style.display = "none";
+}
