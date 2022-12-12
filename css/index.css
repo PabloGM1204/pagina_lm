@@ -455,6 +455,7 @@ body{
     /****************Astrofotos***************/
     #row{
         grid-template-columns: auto auto;
+        margin-left: 5%;
     }
 
     .flip-card{
@@ -524,10 +525,6 @@ body{
     }
 
     /****************Misiones***************/
-    #texto-not{
-        margin-left: 0;
-        margin-right: 0;
-    }
 
     .video {
         width: 100%;
