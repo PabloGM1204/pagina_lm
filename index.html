@@ -8,9 +8,8 @@
     <!--Enlace a la hoja de estilo-->
     <link rel="stylesheet" href="./css/index.css">
     <!--Enlace al js-->
-    <script src="./js/main.js"></script>
-    <script src="./js/top.js"></script>
 
+    <script src="./js/top.js"></script>
     <!--Enlace al favicon-->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <!--Enlace a los iconos de la social media-->
@@ -20,7 +19,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <span class="ir-arriba fa fa-angle-up" id="arriba"></span>
       <!--Barra de navegación de arriba-->
       <nav id="navegation">
         <div class="topnav" id="myTopnav">
@@ -28,12 +27,21 @@
           <a href="#Astrofotos">Astropictures</a>
           <a href="#Misiones">Mission</a>
           <a href="#Sitios">Places</a>
+          <a href="https://nasa.gov">WebGrafía</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
-        <script src="./js/top.js"></script>
-        <script src="./js/main.js"></script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
       </nav>
       <!--Hero Section-->
       <div id="hero">
@@ -92,7 +100,7 @@
       
       <!--Galería-->
       <div id="Astrofotos">
-        <h1 id="title-astro">Astropicturs</h1>
+        <h1 id="title-astro">AstroPictures</h1>
         <div class="grid-gallery">
           <a class="grid-gallery__item" href="./img/andromeda.jpg">
               <img class="grid-gallery__image" src="./img/andromeda.jpg">
@@ -155,11 +163,11 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.89792068917!2d-69.14136204798825!3d-23.863915512743013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96af46527fef1c47%3A0x34dbbb7aa8223dc!2sDesierto%20de%20Atacama!5e0!3m2!1ses!2ses!4v1670691962749!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div>
             <h1 id="title-sit">Desierto de Atacamas, Chile</h1>
-            En Chile se encuentran los observatorios astronómicos más importantes del mundo: Paranal, La Silla, Las Campanas, Cerro Tololo… En Cerro Paranal se está construyendo el Telescopio Europeo Extremadamente Grande (E-ELT), llamado a ser el mayor observatorio óptico del mundo, con un telescopio de 100 metros de diámetro.
+            <p>The most important astronomical observatories in the world are located in Chile: Paranal, La Silla, Las Campanas, Cerro Tololo... The Extremely Large European Telescope (E-ELT) is being built on Cerro Paranal, called to be the largest optical observatory in the world, with a telescope 100 meters in diameter.</p>
           </div>
           <div>
             <h1 id="title-sit">La Palma, Islas Canarias, España</h1>
-            Las Islas Canarias son otro enclave privilegiado para ver las estrellas. En la isla de La Palma se encuentra el observatorio del Roque de los Muchachos, perteneciente al Instituto de Astrofísica de Canarias, que cuenta con más de una docena de instrumentos gestionados por diferentes países. La ubicación de la isla en medio del Atlántico y su altura sobre el nivel del mar convierten a la Isla Bonita en el lugar predilecto de muchos astrónomos.
+            <p>The Canary Islands are another privileged enclave to see the stars. On the island of La Palma is the Roque de los Muchachos observatory, belonging to the Instituto de Astrofísica de Canarias, which has more than a dozen instruments managed by different countries. The island's location in the middle of the Atlantic and its height above sea level make Isla Bonita the favorite place for many astronomers.</p>
           </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161588.80212287325!2d-15.49330006601243!3d28.102306687085523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4094518b44a92f%3A0x40340f3be4d13e0!2sLas%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1670692518037!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
       </div>
@@ -180,6 +188,8 @@
         </div>
       </div>
       </div>
+      <script src="./js/main.js"></>
+      <script src="./js/top.js"></script>
 
   </body>
 </html>

@@ -1,20 +1,33 @@
-// Get the button
-let mybutton = document.getElementById("myBtn");
+const $btnUp = document.getElementById("arriba");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+//Hace aparecer el botón a 300px
+window.addEventListener(
+    "scroll",
+    function (event) {
+      var x = document.getElementById("arriba");
+      var top = this.scrollY;
+      if (top > 300) x.style.display = "block";
+      else x.style.display = "none";
+    },
+    false
+);
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
+//Para que haga un scroll up el botón
+window.addEventListener("scroll", (e)=>{
+	let y = document.documentElement.scrollTop;
+	if(y === 0){
+		$btnUp.classList.add("hide");
+		$btnUp.classList.add("active");
+	} else if(y>=300){
+		$btnUp.classList.add("active");
+		$btnUp.classList.add("hide");
+	}
+})
+window.addEventListener("click", (e)=>{
+	if(e.target === $btnUp || e.target.matches("fa fa-angle-up")){
+		window.scrollTo({
+			behavior:"smooth",
+			top:0
+		})
+	}
+})
