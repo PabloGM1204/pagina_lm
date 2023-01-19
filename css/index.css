@@ -17,6 +17,7 @@
 }
 
 html{
+    font-family: 'Courier New', Courier, monospace;
     scroll-behavior: smooth;
     cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAD///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B83X//////8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8HHkb//////wf///8H////BwA7//8AQP//z9j//////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwA8//8AQP//////B////wcAQP//AED//wBA//////8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wd/lv//AED//wBA///J0v//AED//wBA//8AQP//AD3//////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwAAAP8AAAD/////BwBA//8AQP//AED//wBA//8AQP//AED//wBA//////8H////B////weFmv//hZn//////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwAAAP8AAAD/wMDA/wAAAP/Y3///AED//wBA//8AQP//AED//wBA//8AQP//AED//5ao//8AQP//AED//wBA//////8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwAAAP8PDw//v7+//7+/v/+/v7//AAAA/wBA//8kx///AD///wBA//8AQP//JMX//wBA//8AQP//AED//wBA//8AQP//////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwAAAP89PT3/v7+//7+/v/+/v7//v7+//7+/v/8AAAD/AED//yTF//8AQP//ADv//yTF//8lyP//AED//wBA//8AQP//AED//////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8HAAAA/7+/v/+/v7//v7+//7+/v/+/v7//Tk5O/wAAAP8NaP//JMX//yXI//8kxf//JMX//wA///8gtf//JMb//wBA//////8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wcAAAD/v7+//7+/v/+/v7//xMTE/wAAAP/T09P/BwcH/yTG//8kxf//JMX//yTF//8kxf//JMX//yTF//8AQP//AED//wBA//8AQP//AED//////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwAAAP+/v7//v7+//wAAAP8TExP/2dnZ/9nZ2f/Z2dn/AAAA/xmLtP8AAAD/Jcj//yTF//8kxf//JMX//wBA//8AQP//AED//wBA//8bRP//////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8HAAAA/8TExP8AAAD/2tra/9nZ2f/Z2dn/2dnZ/9nZ2f8AAAD/Pz8//6+vr/8AAAD/JMX//yTF//8kxf//JMX//yTF//8AQP//XYD//////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wcAAAD/AAAA/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/AAAA/8PDw/8AAAD/CQkJ/wAAAP8kxf//JMX//yTF//8AO///AED//////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8HKCgo/yAgIP/Z2dn/2dnZ/9nZ2f/Z2dn/3d3d/wAAAP+/v7//AAAA/6mpqf8AAAD/AAAA/yTF//8FR///AED//yhO//////8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BxkZGf+FhYX/2dnZ/9nZ2f/Z2dn/2dnZ/93d3f8AAAD/v7+//wAAAP/CwsL/AAAA/9nZ2f/Z2dn/AAAA/wAaZ//S0tL/cHBw/wgICP8AAAD/////B////wf///8H////B////wf///8H////B////wf///8H////B////wcwMDD/gYGB/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/AAAA/7+/v/8AAAD/j4+P/wAAAP/Z2dn/2dnZ/9nZ2f/Z2dn/AAAA/7y8vP/BwcH/v7+//wAAAP////8H////B////wf///8H////B////wf///8H////B////wf///8H1NTU/wcHB//Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/6ysrP+rq6v/AAAA/wAAAP8QEBD/2dnZ/9nZ2f/Z2dn/2dnZ/93d3f8PDw//v7+//7+/v/+/v7//AAAA/////wf///8H////B////wf///8H////B////wf///8H////B////wcAAAD/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/wAAAP8AAAD/mZmZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/AAAA/7+/v/+/v7//v7+//wgICP////8H////B////wf///8H////B////wf///8H////B////wf///8HAAAA/9nZ2f/Z2dn/2dnZ/9vb2//Z2dn/2dnZ/9nZ2f/Z2dn/3d3d/+Hh4f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/8HBwf9SUlL/v7+//7+/v/+/v7//AAAA/////wf///8H////B////wf///8H////B////wf///8H////BxcXF//a2tr/2dnZ/9nZ2f8AAAD/AAAA/wAAAP8AAAD/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/AAAA/7+/v/+/v7//v7+//2pqav////8H////B////wf///8H////B////wf///8H////B////wf///8HAAAA/9nZ2f/Z2dn/DAwM/wAAAP/d3bT/x8ey/wAAAP8AAAD/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/wAAAP+/v7//v7+//7+/v/+/v7//AAAA/////wf///8H////B////wf///8H////B////wf///8H////BwAAAP/Z2dn/2dnZ/9nZ2f8AAAD/8fGz/+fntP/ExLb/tran/wAAAP/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f8AAAD/FRUV/y4uLv8jIyP/BwcH/wAAAP+dnZ3/////B////wf///8H////B////wf///8H////B////wf///8HAAAA/9nZ2f/Z2dn/2dnZ/wAAAP8MDAz/5+e0/9nZuf8AAAD/AAAA/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/AAAA/7Kysv////8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwAAAP/Z2dn/2dnZ/9nZ2f/Z2dn/3d3d/wAAAP8AAAD/AAAA/wAAAP/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/wAAAP/R0dH/////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8HAAAA/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9PT0//Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9ra2v8AAAD/////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wd7e3v/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f8RERH/AAAA/////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8HAAAA/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f9paWn/AAAA/////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wcAAAD/2dnZ/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/9zc3P8AAAD/AAAA/////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////BwAAAP/Z2dn/2dnZ/9nZ2f/Z2dn/jIyM/wAAAP8AAAD/Y2Nj/////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8HAAAA/wAAAP8AAAD/AAAA/4SEhP////8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H////B////wf///8H/////////+////uP///zH///4B///yA5//wAA//wAAf/wAAP/8AAH//AAAP/wAAD/8AAB//AAB//gAA//wAAD/4AAA/8AAAP/AAAH/gAAB/wAAA/8AAAP+AAAD/gAA//wAAf/8AAf//AAP//gAP//4AP//+AP///g/////////8='), auto; 
 }
@@ -66,7 +67,7 @@ body{
 #arriba{
 	padding:15px 18px;
 	background:black;
-	font-size:20px !important;
+	font-size:20px;
 	color:white;
 	cursor:pointer;
 	position: fixed;
@@ -209,7 +210,7 @@ body{
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 150%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
@@ -442,7 +443,7 @@ body{
 
 /********************** Medias Querys *********************/
 
-@media only screen and (width<=1000px) {
+@media only screen and (width<=1200px) {
     #wrapper{
         width: 100%;
     }

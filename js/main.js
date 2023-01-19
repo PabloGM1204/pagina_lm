@@ -4,10 +4,10 @@ const $btnUp = document.getElementById("arriba");
 window.addEventListener(
     "scroll",
     function (event) {
-      var x = document.getElementById("arriba");
-      var top = this.scrollY;
-      if (top > 300) x.style.display = "block";
-      else x.style.display = "none";
+      	var x = document.getElementById("arriba");
+      	var top = this.scrollY;
+      	if (top > 300) x.style.display = "block";
+      	else x.style.display = "none";
     },
     false
 );
