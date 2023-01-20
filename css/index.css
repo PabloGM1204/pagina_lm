@@ -443,6 +443,35 @@ body{
 
 /********************** Medias Querys *********************/
 
+@media only screen and (width<=1400px) {
+    /****************Sitios***************/
+    #Sitios{
+        padding-top: 10vh;
+        padding-bottom: -10vh;
+    }
+
+    #Sitios p{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #title-sitios{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    #maps{
+        grid-template-columns: auto;
+        margin-right: 5%;
+        padding-bottom: 5%;
+    }
+    #maps iframe{
+        padding-top: 5%;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}
+
 @media only screen and (width<=1200px) {
     #wrapper{
         width: 100%;
@@ -497,6 +526,7 @@ body{
 
     #maps{
         grid-template-columns: auto;
+        margin-right: 20%;
         padding-bottom: 20%;
     }
     #maps iframe{
