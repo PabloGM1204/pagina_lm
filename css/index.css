@@ -178,8 +178,8 @@ body{
 }
 
 #title-intro{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #ffffff;
 }
 
@@ -234,8 +234,8 @@ body{
 }
 
 #title-astro{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #ffffff;
     font-family: title2;
 }
@@ -322,9 +322,9 @@ body{
 }
 
 #title-not{
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     text-decoration: underline;
-    margin-top: 50px;
+    margin-top: 10%;
     text-align: center;
 }
 
@@ -363,8 +363,8 @@ body{
 }
 
 #title-sitios{
-    margin-top: 20px;
-    margin-bottom: -150px;
+    margin-top: 30px;
+    margin-bottom: -90px;
     color: #ffffff;
     font-family: title2;
     text-align: center;
